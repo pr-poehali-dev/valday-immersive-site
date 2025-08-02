@@ -61,6 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				'valdai': {
+					forest: '#2D5016',
+					lake: '#4A90E2',
+					terracotta: '#8B4513',
+					moss: '#4A7C59',
+					cream: '#F5F5DC',
+					stone: '#A8A8A8',
+					earth: '#6B4423'
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'parallax': {
+					'0%': { transform: 'translateY(0px)' },
+					'100%': { transform: 'translateY(-50px)' }
+				},
+				'morph': {
+					'0%': { transform: 'scale(1) rotate(0deg)' },
+					'50%': { transform: 'scale(1.1) rotate(180deg)' },
+					'100%': { transform: 'scale(1) rotate(360deg)' }
+				},
+				'fade-in-up': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'parallax': 'parallax 10s linear infinite',
+				'morph': 'morph 0.6s ease-in-out',
+				'fade-in-up': 'fade-in-up 0.8s ease-out'
 			}
 		}
 	},
